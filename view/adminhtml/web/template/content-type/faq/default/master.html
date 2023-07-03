@@ -1,0 +1,32 @@
+<!--master.html-->
+<div attr="data.main.attributes" ko-style="data.main.style" css="data.main.css">
+    <div class="cms-faq">
+        <div class="mage-accordion-disabled" role="tablist">
+            <div data-role="collapsible" role="presentation" data-collapsible="true" aria-selected="false" aria-expanded="false">
+                <div data-role="trigger" tabindex="0" class="faq-question">
+                    <h4 attr="data.question.attributes" ko-style="data.question.style"
+                        css="data.question.css" html="data.question.html">
+                    </h4>
+                </div>
+                <div class="faq-answer" data-role="content" role="tabpanel" aria-hidden="true" style="display: none;">
+                    <p attr="data.answer.attributes"
+                       ko-style="data.answer.style"
+                       css="data.answer.css"
+                       html="data.answer.html"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/x-magento-init">
+        {
+            ".mage-accordion-disabled": {
+                "accordion": {
+                    "openedState": "active",
+                    "collapsible": "true",
+                    "active": "1",
+                    "multipleCollapsible": "true"
+                }
+            }
+        }
+    </script>
+</div>

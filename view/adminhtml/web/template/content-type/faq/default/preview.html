@@ -1,0 +1,23 @@
+<!-- preview.html -->
+<div attr="data.main.attributes"
+     ko-style="data.main.style"
+     class="pagebuilder-content-type"
+     css="data.main.css"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template" ></render>
+    <b>Pergunta</b>
+    <div class="faq-question"
+         attr="data.question.attributes"
+         ko-style="data.question.style"
+         css="data.question.css"
+         data-bind="liveEdit: { field: 'faq_question', placeholder: $t('Enter a Question') }">
+    </div>
+    <b>Resposta</b>
+    <div class="faq-answer"
+         attr="data.answer.attributes"
+         ko-style="data.answer.style"
+         css="data.answer.css"
+         data-bind="liveEdit: { field: 'faq_answer', placeholder: $t('Enter a Answer') }">
+    </div>
+    <br>
+</div>

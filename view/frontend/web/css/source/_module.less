@@ -1,0 +1,21 @@
+.mage-accordion-disabled > div[data-role=collapsible] > .faq-answer {
+    padding: 0 4.4rem 1rem 3.0rem;
+}
+
+.mage-accordion-disabled > div[data-role=collapsible] > .faq-question:after {
+    content: '\e622';
+    font-size: 1rem;
+    font-family: 'luma-icons';
+    transform: rotate(0deg);
+    transition: all .1s ease-in-out;
+}
+.mage-accordion-disabled > div[data-role=collapsible] > .faq-question {
+    padding: 0 4.4rem 1rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mage-accordion-disabled > div[aria-expanded=true] > .faq-question:after {
+    transform: rotate(180deg);
+}
