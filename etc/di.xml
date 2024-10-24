@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="DefaultWYSIWYGValidator" type="Magento\Framework\Validator\HTML\ConfigurableWYSIWYGValidator">
+        <arguments>
+            <argument name="allowedTags" xsi:type="array">
+                <item name="label" xsi:type="string">label</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
