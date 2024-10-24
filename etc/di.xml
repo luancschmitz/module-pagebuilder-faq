@@ -6,6 +6,18 @@
             <argument name="allowedTags" xsi:type="array">
                 <item name="label" xsi:type="string">label</item>
             </argument>
+            <argument name="attributesAllowedByTags" xsi:type="array">
+                <item name="div" xsi:type="array">
+                    <item name="data-mage-init" xsi:type="string">data-mage-init</item>
+                    <item name="data-role" xsi:type="string">data-role</item>
+                    <item name="role" xsi:type="string">role</item>
+                    <item name="data-collapsible" xsi:type="string">data-collapsible</item>
+                    <item name="aria-selected" xsi:type="string">aria-selected</item>
+                    <item name="aria-expanded" xsi:type="string">aria-expanded</item>
+                    <item name="tabindex" xsi:type="string">tabindex</item>
+                    <item name="aria-hidden" xsi:type="string">aria-hidden</item>
+                </item>
+            </argument>
         </arguments>
     </virtualType>
 </config>
