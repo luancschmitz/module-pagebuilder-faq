@@ -11,4 +11,15 @@
             </argument>
         </arguments>
     </virtualType>
+    <type name="Magento\PageBuilder\Model\Config\ContentType\AdditionalData\Provider\Wysiwyg\Config">
+        <arguments>
+            <argument name="editors" xsi:type="array">
+                <item name="mage/adminhtml/wysiwyg/tiny_mce/tinymceAdapter" xsi:type="array">
+                    <item name="config_modifiers" xsi:type="array">
+                        <item name="faq" xsi:type="string">LuanModules_FAQ/js/content-type/faq/wysiwyg/tinymce/config-modifier</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
 </config>

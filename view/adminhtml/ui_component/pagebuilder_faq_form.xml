@@ -77,14 +77,21 @@
             <settings>
                 <dataScope>faq_question</dataScope>
                 <dataType>text</dataType>
-                <label translate="false">Question</label>
+                <label translate="true">Question</label>
             </settings>
         </field>
 
-        <field name="faq_answer" sortOrder="20" formElement="textarea">
+        <field name="faq_answer" sortOrder="20" formElement="wysiwyg">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="source" xsi:type="string">page</item>
+                    <item name="wysiwygConfigData" xsi:type="array">
+                        <item name="height" xsi:type="string">200px</item>
+                        <item name="add_variables" xsi:type="boolean">true</item>
+                        <item name="add_widgets" xsi:type="boolean">true</item>
+                        <item name="add_images" xsi:type="boolean">true</item>
+                        <item name="add_directives" xsi:type="boolean">true</item>
+                    </item>
                 </item>
             </argument>
             <settings>
@@ -92,6 +99,14 @@
                 <dataType>text</dataType>
                 <label translate="true">Answer</label>
             </settings>
+            <formElements>
+                <wysiwyg>
+                    <settings>
+                        <rows xsi:type="number">8</rows>
+                        <wysiwyg xsi:type="boolean">true</wysiwyg>
+                    </settings>
+                </wysiwyg>
+            </formElements>
         </field>
     </fieldset>
 </form>

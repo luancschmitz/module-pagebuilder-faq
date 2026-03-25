@@ -11,6 +11,11 @@
           sortOrder="21"
           translate="label">
         <children default_policy="deny"/>
+        <additional_data>
+            <item name="wysiwygConfig" xsi:type="array">
+                <item name="wysiwygConfigData" xsi:type="object">Magento\PageBuilder\Model\Config\ContentType\AdditionalData\Provider\Wysiwyg\Config</item>
+            </item>
+        </additional_data>
         <appearances>
             <appearance name="default"
                         default="true"
@@ -39,7 +44,7 @@
                     </element>
                     <element name="answer">
                         <style name="text_align" source="text_align"/>
-                        <html name="faq_answer" converter="Magento_PageBuilder/js/converter/html/tag-escaper"/>
+                        <html name="faq_answer" preview_converter="Magento_PageBuilder/js/converter/html/directive"/>
                     </element>
                 </elements>
             </appearance>

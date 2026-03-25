@@ -1,23 +1,33 @@
 <!-- preview.html -->
 <div attr="data.main.attributes"
      ko-style="data.main.style"
-     class="pagebuilder-content-type"
+     class="pagebuilder-content-type pagebuilder-faq"
      css="data.main.css"
      event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
-    <render args="getOptions().template" ></render>
-    <b>Pergunta</b>
-    <div class="faq-question"
-         attr="data.question.attributes"
-         ko-style="data.question.style"
-         css="data.question.css"
-         data-bind="liveEdit: { field: 'faq_question', placeholder: $t('Enter a Question') }">
+    <render args="getOptions().template"></render>
+    <div class="faq-preview-block faq-preview-question">
+        <span class="faq-preview-label" data-bind="i18n: 'Question'"></span>
+        <div class="faq-question faq-preview-field"
+             attr="data.question.attributes"
+             ko-style="data.question.style"
+             css="data.question.css"
+             data-bind="liveEdit: { field: 'faq_question', placeholder: $t('Enter a question') }">
+        </div>
     </div>
-    <b>Resposta</b>
-    <div class="faq-answer"
-         attr="data.answer.attributes"
-         ko-style="data.answer.style"
-         css="data.answer.css"
-         data-bind="liveEdit: { field: 'faq_answer', placeholder: $t('Enter a Answer') }">
+    <div class="faq-preview-block faq-preview-answer">
+        <span class="faq-preview-label" data-bind="i18n: 'Answer'"></span>
+        <div if="isWysiwygSupported()" class="faq-answer-wysiwyg-wrapper">
+            <div class="faq-answer inline-wysiwyg faq-preview-field"
+                 attr="data.answer.attributes"
+                 ko-style="data.answer.style"
+                 css="data.answer.css"
+                 afterRender="afterRenderWysiwyg"
+                 contenteditable="true"
+                 event="mousedown: handleMouseDown, click: activateEditor, dblclick: handleDoubleClick">
+            </div>
+            <div class="faq-answer-toolbar-container"></div>
+            <div class="placeholder-text" ifnot="data.answer.html" ko-style="getPlaceholderStyle()" translate="'Edit Answer'"></div>
+        </div>
+        <div ifnot="isWysiwygSupported()" class="faq-answer faq-preview-field" attr="data.answer.attributes" ko-style="data.answer.style" css="data.answer.css" data-bind="html: data.answer.html"></div>
     </div>
-    <br>
 </div>
