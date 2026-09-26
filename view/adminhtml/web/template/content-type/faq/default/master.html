@@ -1,19 +1,19 @@
 <!--master.html-->
 <div attr="data.main.attributes" ko-style="data.main.style" css="data.main.css">
-    <div class="cms-faq">
-        <details class="faq-details">
-            <summary class="faq-question"
-                    attr="data.question.attributes"
-                    ko-style="data.question.style"
-                    css="data.question.css"
-                    html="data.question.html">
-            </summary>
-            <div class="faq-answer"
+    <div class="cms-faq faq-disclosure" data-mage-init='{"LuanModules_FAQ/js/faq-disclosure": {}}'>
+        <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-question-text"
+                  attr="data.question.attributes"
+                  ko-style="data.question.style"
+                  css="data.question.css"
+                  html="data.question.html"></span>
+        </button>
+        <div class="faq-answer" hidden>
+            <div class="faq-answer-content bypass-html-filter"
                  attr="data.answer.attributes"
                  ko-style="data.answer.style"
-                 css="data.answer.css">
-                <p html="data.answer.html"></p>
-            </div>
-        </details>
+                 css="data.answer.css"
+                 html="data.answer.html"></div>
+        </div>
     </div>
 </div>

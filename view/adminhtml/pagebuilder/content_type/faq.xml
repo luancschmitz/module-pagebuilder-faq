@@ -11,11 +11,6 @@
           sortOrder="21"
           translate="label">
         <children default_policy="deny"/>
-        <additional_data>
-            <item name="wysiwygConfig" xsi:type="array">
-                <item name="wysiwygConfigData" xsi:type="object">Magento\PageBuilder\Model\Config\ContentType\AdditionalData\Provider\Wysiwyg\Config</item>
-            </item>
-        </additional_data>
         <appearances>
             <appearance name="default"
                         default="true"
