@@ -1,10 +1,13 @@
 {
   "name": "luan-modules/module-faq",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Create a Magento 2 Pagebuilder FAQ",
   "type": "magento2-module",
   "require": {
-    "magento/framework": "*"
+    "magento/framework": "*",
+    "magento/module-cms": "*",
+    "magento/module-page-builder": "*",
+    "magento/module-ui": "*"
   },
   "license": [
     "MIT"

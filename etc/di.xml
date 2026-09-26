@@ -16,6 +16,10 @@
                     <item name="aria-expanded" xsi:type="string">aria-expanded</item>
                     <item name="tabindex" xsi:type="string">tabindex</item>
                     <item name="aria-hidden" xsi:type="string">aria-hidden</item>
+                    <item name="hidden" xsi:type="string">hidden</item>
+                </item>
+                <item name="button" xsi:type="array">
+                    <item name="aria-expanded" xsi:type="string">aria-expanded</item>
                 </item>
             </argument>
         </arguments>
